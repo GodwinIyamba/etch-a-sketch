@@ -11,9 +11,27 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <button class="clear-grid">clear</button>
-    <div class="main-container">
-        <div class="grid-container"></div>
+    <h1 class="title">etch-a-sketch</h1>
+    <div class="container">
+        <div class="buttons">
+            <div class="input-group">
+                <label for="user-choice">number must be less than 100</label>
+                <input type="text" id="user-choice" class="user-choice" placeholder="number of squares">
+            </div>
+            <button class="btn-clear">clear</button>
+            <div class="instruction">
+                <ol>
+                    <li>mouse over the canvas</li>
+                </ol>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="grid-container"></div>
+        </div>
+        
     </div>
+    <footer class="footer">
+        copyright &copy; 2021 Godwin Iyamba 
+    </footer>
 </body>
 </html>

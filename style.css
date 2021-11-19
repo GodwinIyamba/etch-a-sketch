@@ -12,18 +12,87 @@ html {
 
 body {
   font-family: montserrat;
-}
-.main-container {
-  width: 350px;
-  height: 350px;
-  border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+.title {
+  text-transform: capitalize;
+  margin: 0 0 50px 0;
+  font-size: 50px;
+}
+
+/* Buttons and Input */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: rgb(226, 110, 110);
+}
+
+.user-choice {
+  border: 1px solid rgb(18, 101, 255);
+  padding: 10px 30px 10px 5px;
+  border-radius: 11px;
+  font-size: 12px;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+
+.user-choice:focus {
+  box-shadow: 0px 0px 2px 0.2px rgb(18, 101, 255);
+  outline: none;
+}
+.btn-clear {
+  border: 1px solid rgb(18, 101, 255);
+  color: rgb(18, 101, 255);
+  border-radius: 11px;
+  padding: 10px 30px;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  background-color: rgb(18, 101, 255);
+  color: #fff;
+}
+
+.instruction {
+  text-transform: capitalize;
+}
+/* .main-container {
+  width: 350px;
+  height: 350px;
+  border: 5px solid rgb(18, 101, 255);
+} */
+
 .grid-container {
-  width: 340px;
-  height: 340px;
+  width: 540px;
+  height: 540px;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 2px 2px 10px 0.8px rgb(0, 0, 0, 0.5);
 }
 
 .tile {
@@ -31,25 +100,23 @@ body {
   flex-grow: 1;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  color: hsl(240, 41%, 48%);
 }
 
 .hover {
   background-color: #000000;
 }
 
-.clear-grid {
-  border: 2px solid rgb(18, 101, 255);
-  color: rgb(18, 101, 255);
-  border-radius: 11px;
-  padding: 10px 20px;
-  background-color: transparent;
-  font-size: 18px;
-  text-transform: capitalize;
-  cursor: pointer;
-  margin-bottom: 20px;
+.erase {
+  background-color: #ffffff;
 }
 
-.clear-grid:hover {
-  background-color: rgb(18, 101, 255);
-  color: #fff;
+/* Footer */
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-transform: capitalize;
 }
