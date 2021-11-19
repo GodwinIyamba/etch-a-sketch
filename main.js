@@ -1,7 +1,7 @@
 const container = document.querySelector('.grid-container');
 const clearBtn = document.querySelector('.clear-grid');
 
-let gridTile = 50;
+let gridTile = 16;
 let width = 340 / gridTile;
 let height = 340 / gridTile;
 let gridSize = gridTile * gridTile;
