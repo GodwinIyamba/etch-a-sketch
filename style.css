@@ -13,23 +13,43 @@ html {
 body {
   font-family: montserrat;
 }
-
-.container {
-  width: 340px;
-  height: 330px;
+.main-container {
+  width: 350px;
+  height: 350px;
   border: 5px solid red;
+}
+
+.grid-container {
+  width: 340px;
+  height: 340px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .tile {
-  width: 20px;
-  height: 20px;
+  border: 0;
   flex-grow: 1;
   cursor: pointer;
-  border: 1px solid;
+  transition: all 0.2s ease-in-out;
 }
 
-.tile:hover {
+.hover {
   background-color: #000000;
+}
+
+.clear-grid {
+  border: 2px solid rgb(18, 101, 255);
+  color: rgb(18, 101, 255);
+  border-radius: 11px;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.clear-grid:hover {
+  background-color: rgb(18, 101, 255);
+  color: #fff;
 }
